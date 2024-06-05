@@ -10,7 +10,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f9;
             color: #333;
-            margin: 0;
+            margin:0 300px 0 300px ;
             padding: 20px;
         }
 
@@ -110,90 +110,44 @@
 
     <div class="section" id="snacks">
         <h3>Snacks (Select 3 items)</h3>
-        <label><input type="checkbox" class="snack" value="10"> Chips</label>
-        <label><input type="checkbox" class="snack" value="5"> Cookies</label>
-        <label><input type="checkbox" class="snack" value="7"> Nuts</label>
-        <label><input type="checkbox" class="snack" value="8"> Candy</label>
-        <label><input type="checkbox" class="snack" value="6"> Crackers</label>
-        <label><input type="checkbox" class="snack" value="9"> Popcorn</label>
-        <label><input type="checkbox" class="snack" value="4"> Granola Bar</label>
-        <div id="snack-quantities" style="display:none;">
-            <label>Quantity for Chips: <input type="number" class="snack-quantity" data-price="10"
-                    data-item="0"></label>
-            <label>Quantity for Cookies: <input type="number" class="snack-quantity" data-price="5"
-                    data-item="1"></label>
-            <label>Quantity for Nuts: <input type="number" class="snack-quantity" data-price="7" data-item="2"></label>
-            <label>Quantity for Candy: <input type="number" class="snack-quantity" data-price="8" data-item="3"></label>
-            <label>Quantity for Crackers: <input type="number" class="snack-quantity" data-price="6"
-                    data-item="4"></label>
-            <label>Quantity for Popcorn: <input type="number" class="snack-quantity" data-price="9"
-                    data-item="5"></label>
-            <label>Quantity for Granola Bar: <input type="number" class="snack-quantity" data-price="4"
-                    data-item="6"></label>
-        </div>
+        <label><input type="checkbox" class="snack" value="10" data-item="Chips"> Chips</label>
+        <label><input type="checkbox" class="snack" value="5" data-item="Cookies"> Cookies</label>
+        <label><input type="checkbox" class="snack" value="7" data-item="Nuts"> Nuts</label>
+        <label><input type="checkbox" class="snack" value="8" data-item="Candy"> Candy</label>
+        <label><input type="checkbox" class="snack" value="6" data-item="Crackers"> Crackers</label>
+        <label><input type="checkbox" class="snack" value="9" data-item="Popcorn"> Popcorn</label>
+        <label><input type="checkbox" class="snack" value="4" data-item="Granola Bar"> Granola Bar</label>
     </div>
 
     <div class="section" id="grocery">
         <h3>Grocery (Select 3 items)</h3>
-        <label><input type="checkbox" class="grocery" value="20"> Rice</label>
-        <label><input type="checkbox" class="grocery" value="15"> Pasta</label>
-        <label><input type="checkbox" class="grocery" value="12"> Bread</label>
-        <label><input type="checkbox" class="grocery" value="18"> Flour</label>
-        <label><input type="checkbox" class="grocery" value="25"> Sugar</label>
-        <label><input type="checkbox" class="grocery" value="10"> Salt</label>
-        <label><input type="checkbox" class="grocery" value="30"> Oil</label>
-        <div id="grocery-quantities" style="display:none;">
-            <label>Quantity for Rice: <input type="number" class="grocery-quantity" data-price="20"
-                    data-item="0"></label>
-            <label>Quantity for Pasta: <input type="number" class="grocery-quantity" data-price="15"
-                    data-item="1"></label>
-            <label>Quantity for Bread: <input type="number" class="grocery-quantity" data-price="12"
-                    data-item="2"></label>
-            <label>Quantity for Flour: <input type="number" class="grocery-quantity" data-price="18"
-                    data-item="3"></label>
-            <label>Quantity for Sugar: <input type="number" class="grocery-quantity" data-price="25"
-                    data-item="4"></label>
-            <label>Quantity for Salt: <input type="number" class="grocery-quantity" data-price="10"
-                    data-item="5"></label>
-            <label>Quantity for Oil: <input type="number" class="grocery-quantity" data-price="30"
-                    data-item="6"></label>
-        </div>
+        <label><input type="checkbox" class="grocery" value="20" data-item="Rice"> Rice</label>
+        <label><input type="checkbox" class="grocery" value="15" data-item="Pasta"> Pasta</label>
+        <label><input type="checkbox" class="grocery" value="12" data-item="Bread"> Bread</label>
+        <label><input type="checkbox" class="grocery" value="18" data-item="Flour"> Flour</label>
+        <label><input type="checkbox" class="grocery" value="25" data-item="Sugar"> Sugar</label>
+        <label><input type="checkbox" class="grocery" value="10" data-item="Salt"> Salt</label>
+        <label><input type="checkbox" class="grocery" value="30" data-item="Oil"> Oil</label>
     </div>
 
     <div class="section" id="beauty-hygiene">
         <h3>Beauty & Hygiene (Select 3 items)</h3>
-        <label><input type="checkbox" class="beauty-hygiene" value="15"> Shampoo</label>
-        <label><input type="checkbox" class="beauty-hygiene" value="20"> Soap</label>
-        <label><input type="checkbox" class="beauty-hygiene" value="25"> Lotion</label>
-        <label><input type="checkbox" class="beauty-hygiene" value="30"> Toothpaste</label>
-        <label><input type="checkbox" class="beauty-hygiene" value="35"> Deodorant</label>
-        <label><input type="checkbox" class="beauty-hygiene" value="40"> Perfume</label>
-        <label><input type="checkbox" class="beauty-hygiene" value="45"> Hair Gel</label>
-        <div id="beauty-hygiene-quantities" style="display:none;">
-            <label>Quantity for Shampoo: <input type="number" class="beauty-hygiene-quantity" data-price="15"
-                    data-item="0"></label>
-            <label>Quantity for Soap: <input type="number" class="beauty-hygiene-quantity" data-price="20"
-                    data-item="1"></label>
-            <label>Quantity for Lotion: <input type="number" class="beauty-hygiene-quantity" data-price="25"
-                    data-item="2"></label>
-            <label>Quantity for Toothpaste: <input type="number" class="beauty-hygiene-quantity" data-price="30"
-                    data-item="3"></label>
-            <label>Quantity for Deodorant: <input type="number" class="beauty-hygiene-quantity" data-price="35"
-                    data-item="4"></label>
-            <label>Quantity for Perfume: <input type="number" class="beauty-hygiene-quantity" data-price="40"
-                    data-item="5"></label>
-            <label>Quantity for Hair Gel: <input type="number" class="beauty-hygiene-quantity" data-price="45"
-                    data-item="6"></label>
-        </div>
+        <label><input type="checkbox" class="beauty-hygiene" value="15" data-item="Shampoo"> Shampoo</label>
+        <label><input type="checkbox" class="beauty-hygiene" value="20" data-item="Soap"> Soap</label>
+        <label><input type="checkbox" class="beauty-hygiene" value="25" data-item="Lotion"> Lotion</label>
+        <label><input type="checkbox" class="beauty-hygiene" value="30" data-item="Toothpaste"> Toothpaste</label>
+        <label><input type="checkbox" class="beauty-hygiene" value="35" data-item="Deodorant"> Deodorant</label>
+        <label><input type="checkbox" class="beauty-hygiene" value="40" data-item="Perfume"> Perfume</label>
+        <label><input type="checkbox" class="beauty-hygiene" value="45" data-item="Hair Gel"> Hair Gel</label>
     </div>
 
     <div class="section" id="billing-summary">
         <h3>Billing Summary</h3>
-        <p>Snacks Total: $<span id="snacks-total">0</span></p>
-        <p>Grocery Total: $<span id="grocery-total">0</span></p>
+        <p>Snacks Total: Rs<span id="snacks-total">0</span></p>
+        <p>Grocery Total: Rs<span id="grocery-total">0</span></p>
         <p>Beauty & Hygiene Total: $<span id="beauty-hygiene-total">0</span></p>
-        <p>Tax (10%): $<span id="tax">0</span></p>
-        <p id="total">Total Bill: $<span id="total-bill">0</span></p>
+        <p>Tax (10%): Rs<span id="tax">0</span></p>
+        <p id="total">Total Bill: Rs<span id="total-bill">0</span></p>
         <button onclick="calculateTotal()">Total Bill</button>
     </div>
 
@@ -204,8 +158,9 @@
                 if (selectedSnacks > 3) {
                     alert('You can only select 3 snacks');
                     this.checked = false;
+                    return;
                 }
-                document.getElementById('snack-quantities').style.display = selectedSnacks > 0 ? 'block' : 'none';
+                toggleQuantityInput(this, 'snack');
             });
         });
 
@@ -215,8 +170,9 @@
                 if (selectedGroceries > 3) {
                     alert('You can only select 3 grocery items');
                     this.checked = false;
+                    return;
                 }
-                document.getElementById('grocery-quantities').style.display = selectedGroceries > 0 ? 'block' : 'none';
+                toggleQuantityInput(this, 'grocery');
             });
         });
 
@@ -226,10 +182,29 @@
                 if (selectedBeautyHygiene > 3) {
                     alert('You can only select 3 beauty & hygiene items');
                     this.checked = false;
+                    return;
                 }
-                document.getElementById('beauty-hygiene-quantities').style.display = selectedBeautyHygiene > 0 ? 'block' : 'none';
+                toggleQuantityInput(this, 'beauty-hygiene');
             });
         });
+
+        function toggleQuantityInput(checkbox, category) {
+            const itemLabel = checkbox.parentElement;
+            const item = checkbox.dataset.item;
+            const price = checkbox.value;
+
+            if (checkbox.checked) {
+                const input = document.createElement('input');
+                input.type = 'number';
+                input.classList.add(`${category}-quantity`);
+                input.dataset.price = price;
+                input.placeholder = 'Qty';
+                itemLabel.appendChild(input);
+            } else {
+                const input = itemLabel.querySelector(`.${category}-quantity`);
+                if (input) itemLabel.removeChild(input);
+            }
+        }
 
         function calculateTotal() {
             let snacksTotal = 0;
@@ -237,21 +212,21 @@
             let beautyHygieneTotal = 0;
 
             document.querySelectorAll('.snack-quantity').forEach(input => {
-                let checkbox = document.querySelector(`.snack:nth-of-type(${parseInt(input.dataset.item) + 1})`);
+                let checkbox = input.previousElementSibling;
                 if (checkbox && checkbox.checked) {
                     snacksTotal += parseInt(input.value || 0) * parseInt(input.dataset.price);
                 }
             });
 
             document.querySelectorAll('.grocery-quantity').forEach(input => {
-                let checkbox = document.querySelector(`.grocery:nth-of-type(${parseInt(input.dataset.item) + 1})`);
+                let checkbox = input.previousElementSibling;
                 if (checkbox && checkbox.checked) {
                     groceryTotal += parseInt(input.value || 0) * parseInt(input.dataset.price);
                 }
             });
 
             document.querySelectorAll('.beauty-hygiene-quantity').forEach(input => {
-                let checkbox = document.querySelector(`.beauty-hygiene:nth-of-type(${parseInt(input.dataset.item) + 1})`);
+                let checkbox = input.previousElementSibling;
                 if (checkbox && checkbox.checked) {
                     beautyHygieneTotal += parseInt(input.value || 0) * parseInt(input.dataset.price);
                 }
